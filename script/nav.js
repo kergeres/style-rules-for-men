@@ -12,6 +12,7 @@ function hamburgerNav() {
         document.querySelector(".ham-menu-linea").classList.remove("linea-rot");
         document.querySelector(".ham-menu-lineb").classList.remove("lineb-rot");
         document.querySelector(".ham-cont").style.left = "20px";
+
     }
 
     else {
@@ -29,9 +30,12 @@ window.addEventListener('scroll', () => {
     let headerBar = document.querySelector(".header-bar")
     let headerLogo = document.querySelector(".header-logo-dktp")
     let headerBarH1 = document.querySelector(".header-bar > h1")
-    let headerBarB = document.querySelector(".header-bar > h1 > b")
+
+    let completor = document.querySelector(".headercompletor")
     headerBar.classList.toggle('scroll-header-shrinker', window.scrollY > 0)
     // headerLogo.classList.toggle('scroll-logo-shrinker', window.scrollY > 0)
     headerBarH1.classList.toggle('scroll-h1-shrinker', window.scrollY > 0)
-    headerBarB.classList.toggle('scroll-b-shrinker', window.scrollY > 0)
+
+    completor.classList.toggle('headercompletor-shrinker', window.scrollY > 0)
+
 })

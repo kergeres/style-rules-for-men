@@ -4,8 +4,14 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://w
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
 
-// Firebase configuration
 
+// google analytics 
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'G-MH5M3CN6WQ');
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCdEcafmWt0TPFWqbN714rwZp7v_IXFfJc",
   authDomain: "style-rules-for-men.firebaseapp.com",

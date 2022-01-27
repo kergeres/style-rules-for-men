@@ -8,7 +8,7 @@ $roboto-slab: "roboto slab";
   font-family: minimal;
   src: url(../fonts/asap/static/Asap-Regular.ttf);
 }
-
+$navy-blue: #004080;
 $light-black: #adadad;
 $mid-black: #404040;
 $dark-black: #0a0907;
@@ -58,5 +58,5 @@ $blackk: #0a0907;
   opacity: 0.6;
 }
 ::selection {
-  background-color: $index;
+  background-color: #84aad1;
 }
