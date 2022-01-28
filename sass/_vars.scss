@@ -1,4 +1,5 @@
-$roboto-slab: "roboto slab";
+// for development
+$border: 1px solid black;
 
 @font-face {
   font-family: Lora;
@@ -9,26 +10,8 @@ $roboto-slab: "roboto slab";
   src: url(../fonts/asap/static/Asap-Regular.ttf);
 }
 $navy-blue: #004080;
-$light-black: #adadad;
-$mid-black: #404040;
-$dark-black: #0a0907;
-$index: #fcba03;
-$user-field-bgco: darken($index, 5);
-$content-field-bgco: $index;
-$form-button: darken($light-black, 10);
-$form-button-border: darken($light-black, 30);
-$form-label-color: $mid-black;
-
-$navAnimTime: 0, 7s;
-
-// for development
-$border: 1px solid black;
-
-$dark-brown: #1b0d01;
-$light-brown: #765c38;
-$dark-blue: #041738;
-$yellow: #c09a67;
-$blackk: #0a0907;
+$dark-black: #292929;
+$index: $navy-blue;
 
 * {
   margin: 0;

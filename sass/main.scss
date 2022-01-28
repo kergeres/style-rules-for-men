@@ -182,11 +182,22 @@ main {
 }
 ul {
   padding-left: 20px;
+  li {
+    list-style-type: none;
+  }
+  li::before {
+    content: "\2022";
+    color: $navy-blue;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 }
 nav {
   background-color: #fafafa;
   width: 200px;
-  height: 100vh;
+  height: 1500px;
   border-right: 4px solid $navy-blue;
   color: #707070;
   padding-left: 30px;
@@ -235,7 +246,7 @@ nav p {
   width: 75%;
   margin: 0 auto 80px 200px;
 
-  padding: 10px 10px 80px 30px;
+  padding: 10px 10px 80px 220px;
   h1 {
     text-align: center;
     color: $dark-black;
@@ -276,16 +287,40 @@ nav p {
 #mobileicon {
   display: none;
 }
+.content-container {
+  font-family: Lora;
+  height: auto;
+  position: relative;
+  // border: $border;
+  width: 75%;
+  margin: 0 auto 80px 100px;
+}
 @media screen and (max-width: 768px) {
+  .content-container {
+    width: 96%;
+    margin: 0;
+    transform: unset;
+    padding: 12px;
+    h1 {
+      margin-right: 0px;
+    }
+  }
+  .header-bar {
+    font-size: 35px;
+    z-index: 1;
+    height: 50px;
+    display: none;
+  }
   .steps-container {
     .step-card {
       flex-direction: column;
-      margin-left: 0;
+      margin-left: 0px;
 
       margin-bottom: 5px;
 
       p {
-        width: 80vw;
+        width: 90vw;
+        margin-right: 0px;
         margin-left: 0px;
       }
     }
@@ -301,7 +336,7 @@ nav p {
     width: 300px;
     position: fixed;
     top: 0;
-    height: 110vh;
+    height: 190vh;
     left: -300px;
     z-index: 2;
     padding-top: 45px;
@@ -315,7 +350,7 @@ nav p {
     display: none;
   }
   .nav-padd-top {
-    padding-top: 45px !important;
+    padding-top: 35px !important;
   }
 
   .panding-page-img {
@@ -419,22 +454,9 @@ nav p {
   transition: all 0.5s;
 }
 
-.content-container {
-  width: 96%;
-  margin: 0;
-  transform: unset;
-}
-
 .content-container p {
   // width: 90%;
   margin: 0 auto;
-}
-
-.header-bar {
-  font-size: 35px;
-  z-index: -4;
-  height: 50px;
-  display: none;
 }
 
 .headercompletor {
@@ -454,3 +476,22 @@ main {
   height: 40px;
   margin-left: 77px;
 }
+
+// @media screen and (max-width: 1260px) {
+//   nav {
+//     background-color: white;
+//     width: 300px;
+//     height: 100vh;
+//     left: -300px;
+
+//     position: fixed;
+//     transition: 0.5s all;
+//     z-index: 3;
+//     top: 0;
+//     box-shadow: 2px 3px 12px -3px rgba(0, 0, 0, 0.3);
+//     p {
+//       font-size: 22px;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
