@@ -51,25 +51,28 @@ const firebaseConfig = {
 //   // appendNav(database)
 // });
 
-// // search functions by searchbar in firebase database 
-// document.querySelector(".search-input").addEventListener('keyup', (e) => {
-//   let srchValue = document.querySelector('.search-input').value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-//   searchPrograms(srchValue)
-// })
+// search functions by searchbar in firebase database 
+document.querySelector(".search-input").addEventListener('keyup', (e) => {
+  let srchValue = document.querySelector('.search-input').value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  searchPrograms(srchValue)
+})
 
-// function searchPrograms(value) {
+let navBarList = document.querySelectorAll('.navAppended').value;
+console.log(navBarList);
 
-//   let filteredPrograms = []
-//   for (const item of database) {
-//     let title = item.monster.mname.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+function searchPrograms(value) {
 
-//     if (title.includes(value.toLowerCase())) {
-//       filteredPrograms.push(item);
-//     }
-//   }
+  let filteredPrograms = []
+  for (const item of database) {
+    let title = item.monster.mname.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-//   appendNav(filteredPrograms);
-// }
+    if (title.includes(value.toLowerCase())) {
+      filteredPrograms.push(item);
+    }
+  }
+
+  appendNav(filteredPrograms);
+}
 // // append the creatures name list on the list bar  
 // function appendNav(items) {
 //   let temlplete = ""
