@@ -123,7 +123,7 @@ let tieT = `
 
 
 <h2>Tie knot types</h2>
-<img class="img-wide" src="img/Tie-Knots.jpg">
+<img class="img-wide" alt="tie knot types" src="img/Tie-Knots.jpg">
 <h2>Tie Rules</h2>
 <ul>
     <li>The tie's width has to be the same as the shirt's collar.</li>
@@ -218,7 +218,7 @@ let pocketsquareT = `
 
 
 <h2>pocket square folding types</h2>
-<img class="img-wide" src="img/fold-types.jpg">
+<img class="img-wide" alt="pocket square types"  src="img/fold-types.jpg">
 <h2>Pocket Square Rules</h2>
 <ul>
 
@@ -237,6 +237,34 @@ let pocketsquareT = `
 
 
 </ul>
+`
+
+let socksT = `
+<h1>the Socks</h1>
+<h2>Socks ranking among clothing parts</h2>
+<p>
+    Nowdays we have to be reminded about clothes hiearchy. It is impoartant to mention the
+    the relation between the socks and the tie. You shouldn't weat a bright coloured or vivid patterned
+    socks
+    because it takes smaller role than the tie, and it shouldn't try to be in the center.
+    <br><br>
+</p>
+<h2>Tie knot types</h2>
+<img class="img-wide" alt="socks types" src="img/sock types.jpg">
+<h2>Sock Rules</h2>
+<ul>
+    <li>Never wear white socks.</li>
+    <li>Always wear a solid colors.</li>
+    <li>if you want to wear patterned socks choose solid patterns on black base.</li>
+    <li>Black socks always a good decision.</li>
+    <li>Always wear long sock which cover your leg even when you cross your legs.</li>
+    <li>Dont wear thick socks.</li>
+    <li>Your socks have to match with the pants/trousers, not your shoes!</li>
+
+    <li>If you wear a bright coloured tie, wear a solid coloured socks.</li>
+    <li>The socks' colour can be the same as the tie.</li>
+</ul>
+
 `
 // SPA selected data page to the dom 
 function appendProfile(chosenItemName) {
