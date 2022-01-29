@@ -3,7 +3,7 @@
 
 // hamburger menu opener 
 function hamburgerNav() {
-    console.log("asdf");
+
     let cbOpen = document.querySelector('#mobileicon');
     if (cbOpen.checked == false)//ha zarva van
     {

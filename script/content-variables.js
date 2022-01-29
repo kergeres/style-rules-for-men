@@ -1,66 +1,8 @@
-"use strict";
-import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"
+"use strict"
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+export { tieT, pocketsquareT }
 
-// import { tieT, pocketsquareT, appendProfile } from './content-variables';
-
-// google analytics 
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-
-gtag('config', 'G-MH5M3CN6WQ');
-// Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyCdEcafmWt0TPFWqbN714rwZp7v_IXFfJc",
-    authDomain: "style-rules-for-men.firebaseapp.com",
-    projectId: "style-rules-for-men",
-    storageBucket: "style-rules-for-men.appspot.com",
-    messagingSenderId: "593080027609",
-    appId: "1:593080027609:web:193ac26d9f603be9cdf1c8",
-    measurementId: "G-W5Y6W84K2X"
-};
-
-
-// search functions by searchbar in firebase database 
-document.querySelector(".search-input").addEventListener('keyup', (e) => {
-    let srchValue = document.querySelector('.search-input').value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    searchPrograms(srchValue)
-})
-
-let navBarList = document.querySelectorAll('.navAppended');
-// console.log(navBarList.id);
-
-function searchPrograms(value) {
-
-    let filteredPrograms = []
-    for (const item of database) {
-        let title = item.monster.mname.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-        if (title.includes(value.toLowerCase())) {
-            filteredPrograms.push(item);
-        }
-    }
-
-    appendNav(filteredPrograms);
-}
-
-let clickListener = () => {
-
-    let cbox = document.querySelectorAll(".navAppended");
-    cbox.forEach(box => {
-        box.addEventListener('click', (e) => {
-            appendProfile(e.target.id)
-
-        })
-    }
-    )
-}
-clickListener()
-
-let tieT = `
+export let tieT = `
 <h1>the Tie</h1>
 <h2>Tie types</h2>
 <p>
@@ -143,7 +85,7 @@ let tieT = `
 
 `
 
-let pocketsquareT = `
+export let pocketsquareT = `
 <h1>The pocket Square</h1>
 <h2>pocket Square occasions</h2>
 <p>
@@ -239,7 +181,7 @@ let pocketsquareT = `
 </ul>
 `
 // SPA selected data page to the dom 
-function appendProfile(chosenItemName) {
+export function appendProfile(chosenItemName) {
     console.log("lig");
     document.querySelector(".content-container").innerHTML = eval(chosenItemName)
 
@@ -247,19 +189,5 @@ function appendProfile(chosenItemName) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
