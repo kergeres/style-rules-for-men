@@ -11,12 +11,14 @@ $border: 1px solid black;
 }
 $navy-blue: #004080;
 $dark-black: #292929;
+
 $index: $navy-blue;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *:focus {
