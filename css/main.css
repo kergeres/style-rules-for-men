@@ -191,6 +191,10 @@ main {
   padding-bottom: 80px;
 }
 
+a {
+  color: unset;
+}
+
 .src {
   cursor: text;
 }
@@ -463,7 +467,9 @@ nav p:hover {
   .ham-cont {
     z-index: 3;
     top: 39px;
-    left: 20px;
+    right: 0px;
+    transition: 0.7s;
+    width: 30px;
     position: fixed;
     cursor: pointer;
     height: 40px;
@@ -475,11 +481,10 @@ nav p:hover {
     cursor: pointer;
     height: 5px;
     position: relative;
-    width: 30px;
+    width: 5px;
     top: 10px;
     right: 0px;
     display: block;
-    transition: 0.5s all;
     border-radius: 1px;
     background-color: #004080 !important;
   }
@@ -492,7 +497,7 @@ nav p:hover {
     height: 5px;
     position: absolute;
     transition: all 0.2s ease-out;
-    width: 40px;
+    width: 5px;
     border-radius: 1px;
     cursor: pointer;
     transition: 0.5s all;
@@ -505,7 +510,6 @@ nav p:hover {
 
 .ham-menu-linea {
   top: 20px;
-  width: 20px;
 }
 
 .linea-rot {
@@ -518,12 +522,14 @@ nav p:hover {
 .lineb-rot {
   transform: rotate(-45deg);
   top: 12px;
+  width: 40px;
   transition: 0.5s all;
 }
 
 .line-rot {
   left: -360px;
   transition: all 0.5s;
+  width: 40px;
 }
 
 .content-container p {

@@ -281,18 +281,18 @@ let watchT = `
 <h2>Choose the right watch to match occasion</h2>
 <p>
 
-    <b>Black tie / White Tie </b> For formal events, simplicity is critical. Historically – it would be
+    <b>Black tie / White Tie </b> <br>For formal events, simplicity is critical. Historically – it would be
     considered
     rude to refer to your watch at such an event. A simple dress watch in a classic style and black leather
     band will mute any objections from conservative observers.<br><br>
-    <b>Business dress </b> – For business – go with a classic and straightforward styled gold or silver
+    <b>Business dress </b><br>For business – go with a classic and straightforward styled gold or silver
     watch with a
     thin dial and limited or no complications. A dark conservative suit pairs best with a classic dress
     watch or a diver watch with a leather strap.<br><br>
-    <b>Business Casual</b> A light-colored suit with no necktie complements a high-end Chrono, pilot, or
+    <b>Business Casual</b><br> A light-colored suit with no necktie complements a high-end Chrono, pilot, or
     field
     watch.<br><br>
-    <b>Casual</b> – If a watch has a metal band, it is considered less formal. A metal band is generally
+    <b>Casual</b><br>If a watch has a metal band, it is considered less formal. A metal band is generally
     suitable
     for casual wear, while a leather band is suitable for any purpose. You can wear any of the watch
     categories with a combination of jeans, a chambray shirt, and dress boots. You should only wear digital
